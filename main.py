@@ -1,10 +1,4 @@
-val = "Sir"
-try:
-    val = int(val)
-except ValueError:
-    print(f"val {val} is not a number")
-else:
-    print(val > 0)
-finally:
-    print("This will be printed anyway")
-
+list1 = ["зелене", "стигла", "червоний"]
+list2 = ["яблуко", "вишня", "томат"]
+for color, apple in zip(list1, list2):
+    print(color, apple)
